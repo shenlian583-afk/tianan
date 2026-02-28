@@ -3,6 +3,20 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelectorAll(".nav a");
 const reveals = document.querySelectorAll(".reveal");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const path = window.location.pathname;
+const currentPage = path.endsWith("/") ? "index.html" : path.split("/").pop();
+
+navLinks.forEach((link) => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  if (
+    href.endsWith(currentPage) ||
+    (currentPage === "index.html" && (href === "./index.html" || href === "index.html"))
+  ) {
+    link.classList.add("nav-current");
+  }
+});
 
 if (menuToggle && topbar) {
   menuToggle.addEventListener("click", () => {
