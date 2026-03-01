@@ -1,17 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#0D1733"/>
-  <rect x="72" y="72" width="1056" height="656" rx="24" fill="url(#a)"/>
-  <circle cx="320" cy="420" r="180" fill="#1F3268"/>
-  <circle cx="320" cy="420" r="88" fill="#0B1B42" stroke="#9CB8FF" stroke-width="8"/>
-  <rect x="460" y="280" width="430" height="250" rx="20" fill="#101D3C" stroke="#6C8DE6" stroke-width="4"/>
-  <rect x="500" y="330" width="350" height="36" rx="10" fill="#2D4382"/>
-  <rect x="500" y="385" width="240" height="24" rx="8" fill="#4061B2"/>
-  <rect x="500" y="425" width="300" height="24" rx="8" fill="#4061B2"/>
-  <circle cx="760" cy="470" r="14" fill="#7EC8FF"/>
   <defs>
-    <linearGradient id="a" x1="72" y1="72" x2="1128" y2="728" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#101D43"/>
-      <stop offset="1" stop-color="#162B57"/>
-    </linearGradient>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none"/>
+    </marker>
   </defs>
+  <rect width="1200" height="800" fill="#F7F3E8"/>
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200" stroke="#E7DFCC"/>
+  <text x="92" y="78" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">FILTER MECHANISM SKETCH</text>
+  <path d="M92 92H1088" stroke="#1D1D1D" stroke-width="3"/>
+
+  <circle cx="260" cy="430" r="110" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <circle cx="260" cy="430" r="56" fill="none" stroke="#3959D7" stroke-width="3" stroke-dasharray="8 7"/>
+  <text x="190" y="585" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">CAP</text>
+
+  <rect x="470" y="318" width="210" height="224" rx="20" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="498" y="346" width="154" height="24" rx="8" fill="#DDE7FF"/>
+  <rect x="498" y="388" width="154" height="24" rx="8" fill="#DDE7FF"/>
+  <rect x="498" y="430" width="154" height="24" rx="8" fill="#DDE7FF"/>
+  <text x="505" y="585" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">CARTRIDGE</text>
+
+  <rect x="840" y="300" width="246" height="260" rx="22" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <circle cx="962" cy="430" r="84" fill="none" stroke="#3959D7" stroke-width="3"/>
+  <path d="M926 430H998M962 394V466" stroke="#1D1D1D" stroke-width="4" stroke-linecap="round"/>
+  <text x="880" y="585" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">PRESS LOCK</text>
+
+  <path d="M372 430H452" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M696 430H824" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="92" y="126" width="996" height="132" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="124" y="176" fill="#1D1D1D" font-size="23" font-family="IBM Plex Mono, monospace">ENGINEERING NOTES</text>
+  <text x="124" y="210" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Focus on one-press release reliability and tolerance stack.</text>
+  <text x="124" y="238" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Validate wear cycle before pilot tooling commitment.</text>
 </svg>

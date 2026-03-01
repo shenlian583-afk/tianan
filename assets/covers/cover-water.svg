@@ -1,16 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#0B737A"/>
-  <rect x="70" y="70" width="1060" height="660" rx="24" fill="url(#a)"/>
-  <rect x="220" y="210" width="760" height="380" rx="22" fill="#177A82" stroke="#65CFD8" stroke-width="6"/>
-  <circle cx="350" cy="400" r="114" fill="#0F5F67"/>
-  <rect x="500" y="280" width="390" height="36" rx="10" fill="#5AD0D8"/>
-  <rect x="500" y="336" width="280" height="24" rx="8" fill="#7DE0E7"/>
-  <rect x="500" y="378" width="330" height="24" rx="8" fill="#7DE0E7"/>
-  <rect x="500" y="420" width="260" height="24" rx="8" fill="#7DE0E7"/>
   <defs>
-    <linearGradient id="a" x1="70" y1="70" x2="1130" y2="730" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0D7D85"/>
-      <stop offset="1" stop-color="#2EA4AC"/>
-    </linearGradient>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none"/>
+    </marker>
   </defs>
+  <rect width="1200" height="800" fill="#F7F3E8"/>
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200" stroke="#E7DFCC"/>
+  <text x="92" y="78" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">WATER SYSTEM SKETCH</text>
+  <path d="M92 92H1088" stroke="#1D1D1D" stroke-width="3"/>
+
+  <rect x="116" y="250" width="220" height="150" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="146" y="316" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">INLET</text>
+
+  <rect x="428" y="230" width="260" height="190" rx="18" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="458" y="306" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">FILTER CORE</text>
+  <circle cx="558" cy="356" r="34" fill="none" stroke="#3959D7" stroke-width="3"/>
+
+  <rect x="780" y="250" width="304" height="150" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="810" y="316" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">OUTLET + TEST</text>
+
+  <path d="M336 325H418" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M688 325H770" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M224 444C312 512 426 530 562 520C720 508 848 534 964 592" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="116" y="500" width="968" height="214" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="148" y="548" fill="#1D1D1D" font-size="23" font-family="IBM Plex Mono, monospace">ENGINEERING CONTROL POINTS</text>
+  <text x="148" y="582" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Flow path verification and sealing tolerance</text>
+  <text x="148" y="612" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Service access and replacement operation check</text>
+  <text x="148" y="642" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Pilot QC checklist before production ramp</text>
+  <text x="148" y="672" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Factory route can scale in Dongguan partner network</text>
 </svg>

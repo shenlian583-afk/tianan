@@ -1,9 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
-  <rect width="1200" height="720" fill="#F2F2F1"/>
-  <rect x="70" y="70" width="1060" height="580" rx="24" fill="#FFFFFF" stroke="#D6D8DE" stroke-width="4"/>
-  <path d="M180 500L380 260L520 400L720 180L940 420" stroke="#9CA6BD" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="380" cy="260" r="36" fill="#F4382F"/>
-  <circle cx="520" cy="400" r="30" fill="#4962FF"/>
-  <circle cx="720" cy="180" r="32" fill="#F4382F"/>
-  <circle cx="940" cy="420" r="28" fill="#4962FF"/>
+  <defs>
+    <marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="#F7F3E8"/>
+  <path d="M0 96H1200M0 192H1200M0 288H1200M0 384H1200M0 480H1200M0 576H1200" stroke="#E7DFCC"/>
+  <text x="100" y="74" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">NPI FLOW (HAND SKETCH)</text>
+  <path d="M100 88H1088" stroke="#1D1D1D" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="92" y="180" width="220" height="170" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="350" y="180" width="220" height="170" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="608" y="180" width="220" height="170" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="866" y="180" width="242" height="170" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+
+  <text x="126" y="232" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">01 INTAKE</text>
+  <text x="126" y="265" fill="#3959D7" font-size="18" font-family="IBM Plex Mono, monospace">Goal + Risk</text>
+
+  <text x="384" y="232" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">02 DFM</text>
+  <text x="384" y="265" fill="#3959D7" font-size="18" font-family="IBM Plex Mono, monospace">CAD + BOM</text>
+
+  <text x="640" y="232" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">03 VALIDATE</text>
+  <text x="640" y="265" fill="#3959D7" font-size="18" font-family="IBM Plex Mono, monospace">EVT/DVT/PVT</text>
+
+  <text x="896" y="232" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">04 PILOT + RAMP</text>
+  <text x="896" y="265" fill="#3959D7" font-size="18" font-family="IBM Plex Mono, monospace">QC + Transfer</text>
+
+  <path d="M312 265H342" stroke="#1D1D1D" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M570 265H600" stroke="#1D1D1D" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M828 265H858" stroke="#1D1D1D" stroke-width="3" marker-end="url(#arr)"/>
+
+  <rect x="92" y="410" width="1016" height="220" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="124" y="452" fill="#1D1D1D" font-size="23" font-family="IBM Plex Mono, monospace">CONTROL RULES</text>
+  <text x="124" y="486" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Stage sign-off before next spend</text>
+  <text x="124" y="516" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Change order if scope or tooling shifts</text>
+  <text x="124" y="546" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Factory backup route if quality risk appears</text>
+  <text x="124" y="576" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Studio keeps client lead, engineering stays white-label</text>
+  <path d="M824 546C874 510 954 510 1018 548" stroke="#E54747" stroke-width="4" stroke-linecap="round"/>
 </svg>

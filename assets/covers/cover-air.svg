@@ -1,10 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#EEE9F6"/>
-  <rect x="70" y="70" width="1060" height="660" rx="24" fill="#E3DDEF"/>
-  <rect x="210" y="200" width="780" height="400" rx="22" fill="#F8F5FC" stroke="#A99EC0" stroke-width="6"/>
-  <circle cx="320" cy="400" r="120" fill="#CEC2E1"/>
-  <rect x="460" y="280" width="420" height="40" rx="12" fill="#A89BBE"/>
-  <rect x="460" y="345" width="320" height="26" rx="10" fill="#B8ADC9"/>
-  <rect x="460" y="390" width="360" height="26" rx="10" fill="#B8ADC9"/>
-  <rect x="460" y="435" width="240" height="26" rx="10" fill="#B8ADC9"/>
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#F7F3E8"/>
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200" stroke="#E7DFCC"/>
+  <text x="92" y="78" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">AIR PRODUCT FLOW SKETCH</text>
+  <path d="M92 92H1088" stroke="#1D1D1D" stroke-width="3"/>
+
+  <rect x="420" y="240" width="360" height="340" rx="24" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <circle cx="602" cy="410" r="104" fill="none" stroke="#3959D7" stroke-width="3" stroke-dasharray="10 8"/>
+  <circle cx="602" cy="410" r="58" fill="none" stroke="#1D1D1D" stroke-width="3"/>
+
+  <path d="M246 410H392" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M812 410H960" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <text x="174" y="388" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">AIR IN</text>
+  <text x="970" y="388" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">AIR OUT</text>
+
+  <path d="M500 300C470 280 420 268 362 276" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M702 516C736 540 786 548 842 542" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="92" y="610" width="1016" height="126" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="124" y="654" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">DFM NOTES: airflow path, assembly access, serviceability, and pilot test checkpoints.</text>
+  <text x="124" y="688" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">Factory route can switch by process capability without changing studio-facing communication.</text>
 </svg>

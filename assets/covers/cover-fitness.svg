@@ -1,16 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#007BC9"/>
-  <rect x="64" y="64" width="1072" height="672" rx="28" fill="url(#a)"/>
-  <rect x="170" y="360" width="640" height="72" rx="20" fill="#093E7D"/>
-  <circle cx="230" cy="500" r="92" fill="#0D366A" stroke="#66C3FF" stroke-width="8"/>
-  <circle cx="712" cy="500" r="92" fill="#0D366A" stroke="#66C3FF" stroke-width="8"/>
-  <rect x="440" y="210" width="110" height="260" rx="20" fill="#F7FAFF" stroke="#24559A" stroke-width="8"/>
-  <rect x="548" y="240" width="30" height="180" rx="10" fill="#1F3B67"/>
-  <rect x="470" y="292" width="40" height="12" rx="6" fill="#1F3B67"/>
   <defs>
-    <linearGradient id="a" x1="64" y1="64" x2="1136" y2="736" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0D88D4"/>
-      <stop offset="1" stop-color="#16A4E0"/>
-    </linearGradient>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none"/>
+    </marker>
   </defs>
+  <rect width="1200" height="800" fill="#F7F3E8"/>
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200" stroke="#E7DFCC"/>
+  <text x="92" y="78" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">FIT ACCESSORY SYSTEM SKETCH</text>
+  <path d="M92 92H1088" stroke="#1D1D1D" stroke-width="3"/>
+
+  <ellipse cx="300" cy="392" rx="140" ry="100" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="262" y="360" width="76" height="64" rx="12" fill="#DDE7FF" stroke="#1D1D1D" stroke-width="2"/>
+  <text x="238" y="538" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">CORE CLIP</text>
+
+  <rect x="520" y="300" width="200" height="188" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="552" y="340" width="136" height="28" rx="8" fill="#DDE7FF"/>
+  <rect x="552" y="382" width="136" height="28" rx="8" fill="#DDE7FF"/>
+  <text x="544" y="538" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">MODULE UNIT</text>
+
+  <rect x="826" y="288" width="250" height="220" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <path d="M874 370H1028" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M874 408H1028" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+  <text x="864" y="538" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">STRAP INTERFACE</text>
+
+  <path d="M440 390H510" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M724 390H812" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="92" y="580" width="1016" height="144" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="124" y="626" fill="#1D1D1D" font-size="22" font-family="IBM Plex Mono, monospace">VALIDATION FOCUS: vibration, sweat exposure, clip fatigue, and assembly repeatability.</text>
+  <text x="124" y="660" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">Studio design intent is preserved while engineering removes production risk.</text>
 </svg>

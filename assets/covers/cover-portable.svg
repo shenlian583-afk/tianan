@@ -1,11 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#1A1D24"/>
-  <rect x="64" y="64" width="1072" height="672" rx="24" fill="#262B35"/>
-  <rect x="220" y="220" width="760" height="360" rx="24" fill="#313846" stroke="#8AA0BF" stroke-width="6"/>
-  <circle cx="340" cy="400" r="108" fill="#3C4557"/>
-  <rect x="485" y="280" width="420" height="34" rx="10" fill="#5B6C87"/>
-  <rect x="485" y="336" width="250" height="26" rx="8" fill="#7385A1"/>
-  <rect x="485" y="378" width="320" height="26" rx="8" fill="#7385A1"/>
-  <rect x="485" y="420" width="290" height="26" rx="8" fill="#7385A1"/>
-  <rect x="485" y="470" width="160" height="38" rx="12" fill="#95A5BE"/>
+  <defs>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" stroke="#1D1D1D" stroke-width="2.5" fill="none"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#F7F3E8"/>
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200M0 700H1200" stroke="#E7DFCC"/>
+  <text x="92" y="78" fill="#1D1D1D" font-size="30" font-family="IBM Plex Mono, monospace">PORTABLE HARDWARE LAYOUT SKETCH</text>
+  <path d="M92 92H1088" stroke="#1D1D1D" stroke-width="3"/>
+
+  <rect x="110" y="210" width="300" height="250" rx="18" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <rect x="160" y="260" width="200" height="52" rx="10" fill="#DDE7FF"/>
+  <rect x="160" y="334" width="200" height="52" rx="10" fill="#DDE7FF"/>
+  <text x="170" y="492" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">MAIN BODY</text>
+
+  <rect x="460" y="234" width="286" height="208" rx="18" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <circle cx="536" cy="338" r="32" fill="none" stroke="#3959D7" stroke-width="3"/>
+  <circle cx="666" cy="338" r="32" fill="none" stroke="#3959D7" stroke-width="3"/>
+  <text x="500" y="492" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">INTERNAL FRAME</text>
+
+  <rect x="796" y="210" width="304" height="250" rx="18" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <path d="M854 292H1044M854 336H1044M854 380H1044" stroke="#3959D7" stroke-width="4" stroke-linecap="round"/>
+  <text x="842" y="492" fill="#1D1D1D" font-size="20" font-family="IBM Plex Mono, monospace">TEST CHECKLIST</text>
+
+  <path d="M410 336H448" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+  <path d="M746 336H784" stroke="#1D1D1D" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="110" y="540" width="990" height="190" rx="16" fill="#FFFDF7" stroke="#1D1D1D" stroke-width="3"/>
+  <text x="142" y="588" fill="#1D1D1D" font-size="23" font-family="IBM Plex Mono, monospace">PORTABLE DFM CHECKPOINTS</text>
+  <text x="142" y="622" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Part count optimization and screw strategy</text>
+  <text x="142" y="652" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Drop and vibration test prep before pilot</text>
+  <text x="142" y="682" fill="#1D1D1D" font-size="19" font-family="IBM Plex Mono, monospace">- Backup supplier path if lead-time risk appears</text>
 </svg>
