@@ -3,7 +3,6 @@
   --ink: #111216;
   --muted: #5e6269;
   --line: #1a1a1a;
-  --accent-red: #f4382f;
   --accent-blue: #4962ff;
   --panel: #ffffff;
   --radius: 16px;
@@ -49,6 +48,7 @@ body {
   padding: 20px 40px;
   border-bottom: 2px solid var(--line);
   background: rgba(244, 244, 242, 0.92);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -101,7 +101,7 @@ body {
   display: none;
   background: none;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius);
   padding: 8px 14px;
   font: 500 0.84rem/1 "IBM Plex Mono", monospace;
   letter-spacing: 0.04em;
@@ -122,11 +122,11 @@ body {
 
 .nav a:hover,
 .nav a.nav-current {
-  color: var(--accent-red);
+  color: var(--accent-blue);
 }
 
 .nav-accent {
-  color: var(--accent-red) !important;
+  color: var(--accent-blue) !important;
 }
 
 main {
@@ -150,13 +150,11 @@ section {
 .hero-copy h1 {
   margin: 8px 0 18px;
   max-width: 16ch;
-  font-size: clamp(2.4rem, 6.4vw, 5.2rem);
-  line-height: 0.97;
+  font-size: clamp(2.2rem, 6vw, 5.2rem);
+  line-height: 1.05;
   letter-spacing: -0.03em;
-}
-
-.accent-red {
-  color: var(--accent-red);
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .accent-blue {
@@ -182,38 +180,25 @@ section {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .btn {
   position: relative;
-  isolation: isolate;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   min-height: 46px;
   padding: 10px 20px;
-  border-radius: 0;
+  border-radius: var(--radius);
   border: 2px solid var(--line);
   cursor: pointer;
   text-decoration: none;
   font: 500 0.88rem/1 "IBM Plex Mono", monospace;
   letter-spacing: 0.03em;
-  overflow: visible;
-  transform: translate(0, 0);
-  transition: transform 180ms ease, color 180ms ease, background-color 180ms ease, border-color 180ms ease;
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border: 2px solid var(--line);
-  background: var(--btn-shadow, #9bb3ff);
-  transform: translate(6px, 6px);
-  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  box-shadow: 4px 4px 0 var(--btn-shadow, var(--line));
+  transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
 .btn::after {
@@ -230,14 +215,20 @@ section {
 }
 
 .btn-outline {
-  color: #133fd9;
-  border-color: #1b49ef;
-  background: rgba(255, 255, 255, 0.98);
+  color: #1a1a1a;
+  background: #ffffff;
+  --btn-shadow: #e0e5ff;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
   --btn-shadow: #d8e3ff;
 }
 
 .btn:hover {
   transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--btn-shadow, var(--line));
 }
 
 .btn:hover::after {
@@ -245,19 +236,13 @@ section {
 }
 
 .btn:active {
-  transform: translate(2px, 2px);
-}
-
-.btn:active::before {
-  transform: translate(2px, 2px);
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0 var(--btn-shadow, var(--line));
 }
 
 .btn:focus-visible {
-  outline: none;
-}
-
-.btn:focus-visible::before {
-  box-shadow: 0 0 0 3px rgba(73, 98, 255, 0.2);
+  outline: 3px solid rgba(73, 98, 255, 0.4);
+  outline-offset: 2px;
 }
 
 .hero-side {
@@ -451,7 +436,7 @@ section {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--accent-red);
+  color: var(--accent-blue);
   letter-spacing: -0.02em;
 }
 
@@ -719,7 +704,7 @@ section {
   display: block;
   font-size: 1.5rem;
   line-height: 1;
-  color: var(--accent-red);
+  color: var(--accent-blue);
 }
 
 .kpi span {

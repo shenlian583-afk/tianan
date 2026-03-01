@@ -1,0 +1,66 @@
+[
+  {
+    "name": "cover-system",
+    "prompt": "Modern electronics engineering lab with prototype parts, process charts, and manufacturing planning board, realistic industrial photo, no logos",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/3cf5a7ec-70cb-48b4-bf26-b43f46445ad2.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-system.png",
+    "attempt": 1,
+    "status": "ok"
+  },
+  {
+    "name": "cover-process",
+    "prompt": "Product development workflow represented by labeled prototype stages on a workshop table, realistic industrial documentary photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/4c46f2bf-903f-4cb6-a731-2cdcdc6ad9b5.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-process.png",
+    "attempt": 1,
+    "status": "ok"
+  },
+  {
+    "name": "cover-filter",
+    "prompt": "Precision cartridge mechanism prototype on a testing jig, close-up industrial photo, high detail",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/7b4bfb5c-53ea-465a-87c3-fbff2b725cd6.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-filter.png",
+    "attempt": 1,
+    "status": "ok"
+  },
+  {
+    "name": "cover-charger",
+    "prompt": "Modular charging hardware prototypes arranged on a clean engineering table, realistic product development photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/90019843-8f1d-4753-821c-da18dc107d4b.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-charger.png",
+    "attempt": 1,
+    "status": "ok"
+  },
+  {
+    "name": "cover-fitness",
+    "prompt": "Magnetic fitness accessory hardware prototypes on validation bench, realistic engineering photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/7515227e-235a-4ce6-964d-226470f44132.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-fitness.png",
+    "attempt": 2,
+    "status": "ok"
+  },
+  {
+    "name": "cover-air",
+    "prompt": "Compact air treatment device prototype at pilot assembly station, realistic factory photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/e82d3a31-4082-4d94-8731-b9b310653295.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-air.png",
+    "attempt": 2,
+    "status": "ok"
+  },
+  {
+    "name": "cover-portable",
+    "prompt": "Portable utility hardware parts and enclosure components laid out for DFM review, realistic workshop photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/c23ad744-e5ab-4274-ac9c-b108c05fff99.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-portable.png",
+    "attempt": 1,
+    "status": "ok"
+  },
+  {
+    "name": "cover-water",
+    "prompt": "Water-related consumer hardware prototype with transparent flow components on testing bench, realistic engineering photo",
+    "url": "https://webstatic.aiproxy.vip/output/20260301/84252/d24f666a-6aad-4d66-9a15-51f0fb781fc3.png",
+    "file": "d:\\geniotek\\assets\\generated\\cover-water.png",
+    "attempt": 1,
+    "status": "ok"
+  }
+]

@@ -1,0 +1,45 @@
+direction: down
+
+r1: {
+  direction: right
+  a: {
+    label: "FILTER CASE"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "MECHANISM"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.font-size: 30
+  }
+}
+
+r2: {
+  direction: right
+  c: {
+    label: "TOLERANCE"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.font-size: 30
+  }
+  d: {
+    label: "LIFE TEST"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.font-size: 30
+  }
+}
+
+r1.a -> r2.c
+r1.b -> r2.d
