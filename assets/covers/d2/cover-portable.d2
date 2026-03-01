@@ -1,0 +1,42 @@
+direction: right
+
+parts: {
+  label: "Parts Breakdown\nBody + Frame + Fasteners"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+optimization: {
+  label: "DFM Optimization\nPart Count + Assembly Steps"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+testplan: {
+  label: "Test Plan\nDrop / Vibration / EOL"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+factory: {
+  label: "Factory Route\nLead-time and backup control"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+parts -> optimization
+optimization -> testplan
+testplan -> factory
+
+note: {
+  label: "Goal: portable product quality without overbuilding cost"
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+optimization -> note

@@ -1,0 +1,42 @@
+direction: right
+
+airflow: {
+  label: "Airflow Intent\nPerformance Targets"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+layout: {
+  label: "Internal Layout\nServiceability + Access"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+pilot: {
+  label: "Pilot Verification\nNoise / Flow / Assembly"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+ramp: {
+  label: "Ramp Governance\nQC + Issue Escalation"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+airflow -> layout: "engineering conversion"
+layout -> pilot: "dfm check"
+pilot -> ramp: "production ready"
+
+network: {
+  label: "Dongguan network can switch route by process capability"
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+ramp -> network

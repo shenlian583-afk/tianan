@@ -1,0 +1,42 @@
+direction: right
+
+product: {
+  label: "Product Intent\nMagnetic Accessory Use Case"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+structure: {
+  label: "Structural Engineering\nRetention + Ergonomics"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+testing: {
+  label: "Reliability Testing\nVibration / Sweat / Fatigue"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+scale: {
+  label: "Production Transfer\nAssembly Repeatability"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+product -> structure: "preserve design intent"
+structure -> testing: "close failure modes"
+testing -> scale: "pilot sign-off"
+
+note: {
+  label: "Output: validated hardware package for studio-led launch"
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+scale -> note

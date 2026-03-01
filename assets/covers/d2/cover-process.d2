@@ -1,0 +1,48 @@
+direction: right
+
+intake: {
+  label: "01 Studio Intake\nGoals + Risks"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+dfm: {
+  label: "02 Engineering Conversion\nDFM / CAD / BOM"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+validate: {
+  label: "03 Validation\nEVT / DVT / PVT"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+pilot: {
+  label: "04 Pilot + Ramp\nSOP / QC / Escalation"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+intake -> dfm: "scope lock"
+dfm -> validate: "prototype loops"
+validate -> pilot: "sign-off"
+
+controls: {
+  label: "Control rules\n- change order required\n- stage sign-off before spend\n- backup factory route ready"
+  shape: rectangle
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+validate -> controls: "must follow"
+pilot -> controls

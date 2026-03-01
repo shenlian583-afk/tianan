@@ -1,0 +1,42 @@
+direction: right
+
+intent: {
+  label: "Studio Intent\nOne-Press User Action"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+mechanism: {
+  label: "Mechanism Engineering\nLock / Release Geometry"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+tolerance: {
+  label: "Tolerance Stack\nTooling + Wear Margin"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+validation: {
+  label: "Cycle Validation\nLife Test + Failure Mode"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+intent -> mechanism: "keep interaction"
+mechanism -> tolerance: "make repeatable"
+tolerance -> validation: "prove in pilot"
+
+note: {
+  label: "Deliverables\nDFM report, key dimensions, QC checkpoints"
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+validation -> note

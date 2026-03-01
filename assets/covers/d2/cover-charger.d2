@@ -1,0 +1,42 @@
+direction: right
+
+modules: {
+  label: "Module Map\nBase + Pad + Add-on"
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+thermal: {
+  label: "Thermal + Electrical\nClearance / Safety"
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+assembly: {
+  label: "Assembly Planning\nFixture + Test Flow"
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+supplier: {
+  label: "Supplier Matching\nPrimary + Backup"
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+modules -> thermal: "architecture lock"
+thermal -> assembly: "dfm decisions"
+assembly -> supplier: "pilot route"
+
+rule: {
+  label: "Rule: keep modular while reducing production risk"
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+assembly -> rule

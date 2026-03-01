@@ -1,0 +1,67 @@
+direction: right
+
+title: {
+  label: "Engineering-led Co-Manufacturing System"
+  shape: text
+}
+
+studio: {
+  label: "Design Studio\nConcept Package\n(UX / ID Intent)"
+  shape: rectangle
+  style.fill: "#F9FAFC"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+engineering: {
+  label: "Engineering Core\nME + EE + FW + NPI"
+  shape: rectangle
+  style.fill: "#F3F7FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+network: {
+  label: "Dongguan Factory Network\nPrimary + Backup Routing"
+  shape: rectangle
+  style.fill: "#EEF9F2"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+quality: {
+  label: "Quality Gates\nEVT -> DVT -> PVT"
+  shape: rectangle
+  style.fill: "#FFF6EE"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+handoff: {
+  label: "Pilot Transfer\nBOM / SOP / QC / Escalation"
+  shape: rectangle
+  style.fill: "#F7F2FF"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+  style.shadow: true
+}
+
+studio -> engineering: "Intent lock"
+engineering -> network: "DFM + process match"
+network -> quality: "Pilot build"
+quality -> handoff: "Ramp ready"
+
+trust: {
+  label: "Rules: white-label, non-circumvention, stage sign-off"
+  shape: rectangle
+  style.fill: "#FFFDF7"
+  style.stroke: "#121212"
+  style.stroke-width: 2
+}
+
+engineering -> trust: "governed by"
+network -> trust
