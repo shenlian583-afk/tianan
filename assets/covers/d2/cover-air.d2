@@ -1,42 +1,60 @@
-direction: right
+direction: down
 
-airflow: {
-  label: "Airflow Intent\nPerformance Targets"
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "AIR CASE"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "FLOW PATH"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-layout: {
-  label: "Internal Layout\nServiceability + Access"
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "NOISE CTRL"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "MOLD PLAN"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-pilot: {
-  label: "Pilot Verification\nNoise / Flow / Assembly"
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-ramp: {
-  label: "Ramp Governance\nQC + Issue Escalation"
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
 
-airflow -> layout: "engineering conversion"
-layout -> pilot: "dfm check"
-pilot -> ramp: "production ready"
-
-network: {
-  label: "Dongguan network can switch route by process capability"
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-ramp -> network

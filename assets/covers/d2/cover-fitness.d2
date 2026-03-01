@@ -1,42 +1,60 @@
-direction: right
+direction: down
 
-product: {
-  label: "Product Intent\nMagnetic Accessory Use Case"
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "FITNESS CASE"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "LOAD PATH"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-structure: {
-  label: "Structural Engineering\nRetention + Ergonomics"
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "DROP TEST"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "QC SOP"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-testing: {
-  label: "Reliability Testing\nVibration / Sweat / Fatigue"
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-scale: {
-  label: "Production Transfer\nAssembly Repeatability"
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
 
-product -> structure: "preserve design intent"
-structure -> testing: "close failure modes"
-testing -> scale: "pilot sign-off"
-
-note: {
-  label: "Output: validated hardware package for studio-led launch"
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-scale -> note

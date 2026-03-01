@@ -1,42 +1,60 @@
-direction: right
+direction: down
 
-flow: {
-  label: "Flow Logic\nInlet -> Filter -> Outlet"
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "WATER CASE"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "LEAK CTRL"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-sealing: {
-  label: "Sealing Engineering\nLeak Risk + Tolerance"
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "COMPLIANCE"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "TRANSFER PACK"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-service: {
-  label: "Serviceability\nReplace / Maintain Access"
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-qc: {
-  label: "Pilot QC\nInspection and Escalation"
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
 
-flow -> sealing: "dfm review"
-sealing -> service: "user-safe maintenance"
-service -> qc: "ramp handoff"
-
-capacity: {
-  label: "Scalable via Dongguan partner factories"
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-qc -> capacity

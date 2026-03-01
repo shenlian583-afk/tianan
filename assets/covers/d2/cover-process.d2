@@ -1,48 +1,60 @@
-direction: right
+direction: down
 
-intake: {
-  label: "01 Studio Intake\nGoals + Risks"
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "NPI FLOW"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "FEASIBILITY"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-dfm: {
-  label: "02 Engineering Conversion\nDFM / CAD / BOM"
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "DFM LOCK"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "PILOT RELEASE"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-validate: {
-  label: "03 Validation\nEVT / DVT / PVT"
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-pilot: {
-  label: "04 Pilot + Ramp\nSOP / QC / Escalation"
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
 
-intake -> dfm: "scope lock"
-dfm -> validate: "prototype loops"
-validate -> pilot: "sign-off"
-
-controls: {
-  label: "Control rules\n- change order required\n- stage sign-off before spend\n- backup factory route ready"
-  shape: rectangle
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-validate -> controls: "must follow"
-pilot -> controls

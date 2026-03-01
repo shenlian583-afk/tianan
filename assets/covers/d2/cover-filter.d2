@@ -1,42 +1,60 @@
-direction: right
+direction: down
 
-intent: {
-  label: "Studio Intent\nOne-Press User Action"
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "FILTER CASE"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "USER ACTION"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-mechanism: {
-  label: "Mechanism Engineering\nLock / Release Geometry"
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "MECHANISM"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "LIFE TEST"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-tolerance: {
-  label: "Tolerance Stack\nTooling + Wear Margin"
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-validation: {
-  label: "Cycle Validation\nLife Test + Failure Mode"
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
 
-intent -> mechanism: "keep interaction"
-mechanism -> tolerance: "make repeatable"
-tolerance -> validation: "prove in pilot"
-
-note: {
-  label: "Deliverables\nDFM report, key dimensions, QC checkpoints"
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-validation -> note

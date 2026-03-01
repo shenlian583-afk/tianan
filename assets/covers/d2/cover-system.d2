@@ -1,67 +1,60 @@
-direction: right
+direction: down
 
-title: {
-  label: "Engineering-led Co-Manufacturing System"
-  shape: text
+r1: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  a: {
+    label: "SYSTEM MAP"
+    width: 320
+    height: 110
+    style.fill: "#0F172A"
+    style.stroke: "#0F172A"
+    style.stroke-width: 3
+    style.font-color: "#FFFFFF"
+    style.font-size: 34
+  }
+  b: {
+    label: "STUDIO BRIEF"
+    width: 320
+    height: 110
+    style.fill: "#FFFFFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-studio: {
-  label: "Design Studio\nConcept Package\n(UX / ID Intent)"
-  shape: rectangle
-  style.fill: "#F9FAFC"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
+r2: {
+  label: ""
+  style.stroke-width: 0
+  style.fill: "transparent"
+  direction: right
+  c: {
+    label: "ENGINEERING"
+    width: 320
+    height: 110
+    style.fill: "#E7EEFF"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
+  d: {
+    label: "FACTORY NETWORK"
+    width: 320
+    height: 110
+    style.fill: "#E8F6EE"
+    style.stroke: "#101010"
+    style.stroke-width: 3
+    style.font-size: 30
+    style.font-color: "#111827"
+  }
 }
 
-engineering: {
-  label: "Engineering Core\nME + EE + FW + NPI"
-  shape: rectangle
-  style.fill: "#F3F7FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
+r1.a -> r2.c
+r1.b -> r2.d
 
-network: {
-  label: "Dongguan Factory Network\nPrimary + Backup Routing"
-  shape: rectangle
-  style.fill: "#EEF9F2"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
 
-quality: {
-  label: "Quality Gates\nEVT -> DVT -> PVT"
-  shape: rectangle
-  style.fill: "#FFF6EE"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
-
-handoff: {
-  label: "Pilot Transfer\nBOM / SOP / QC / Escalation"
-  shape: rectangle
-  style.fill: "#F7F2FF"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-  style.shadow: true
-}
-
-studio -> engineering: "Intent lock"
-engineering -> network: "DFM + process match"
-network -> quality: "Pilot build"
-quality -> handoff: "Ramp ready"
-
-trust: {
-  label: "Rules: white-label, non-circumvention, stage sign-off"
-  shape: rectangle
-  style.fill: "#FFFDF7"
-  style.stroke: "#121212"
-  style.stroke-width: 2
-}
-
-engineering -> trust: "governed by"
-network -> trust
